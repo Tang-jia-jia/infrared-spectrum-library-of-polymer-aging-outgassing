@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>红外谱图数据库（混合方案）</title>
+    <title>聚合物老化释气红外谱图库</title>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <style>
         body {
@@ -110,7 +110,7 @@
     </style>
 </head>
 <body>
-    <h1>红外谱图数据库</h1>
+    <h1>聚合物老化释气红外谱图数据库</h1>
     
     <div class="search-box">
         <input type="text" id="searchInput" placeholder="搜索样品名称">
@@ -265,7 +265,7 @@
             } else {
                 y_data = compound.y.map(transmittance_to_absorbance);
                 y_title = '吸光度 (A)';
-                y_range = [0, 4];
+                y_range = [0, 6];
                 y_dtick = 0.5;  // 吸光度每0.5一格
             }
             
